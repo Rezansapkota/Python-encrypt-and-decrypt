@@ -14,10 +14,10 @@ def shift_char(c, shift, base):
     return chr((ord(c) - ord(base) + shift) % 26 + ord(base))
 
 
-# encrypt text
+# encrypt text using the given assignment conditions
 def encrypt_text(text, s1, s2):
     result = ""
-
+# using if else conditions to check the encrypthon condition given in assignment rules
     for c in text:
         if 'a' <= c <= 'm':
             result += shift_char(c, s1 * s2, 'a')
@@ -33,7 +33,7 @@ def encrypt_text(text, s1, s2):
     return result
 
 
-# decrypt text (try all possibilities)
+# decrypt text according to the conditions provided in assignment (try all possibilities)
 def decrypt_text(text, s1, s2):
     result = ""
 
@@ -85,7 +85,7 @@ def verify(f1, f2):
             print("Decryption failed")
 
 
-# main
+# Error handeling 'prints: enter number only, if user try to enter any other things like alphabet in the shift value'
 def main():
     # input
     while True:
@@ -96,7 +96,7 @@ def main():
         except ValueError:
             print("Enter numbers only")
 
-    # read file
+    # read file 'raw_text.txt'
     try:
         with open("raw_text.txt", "r") as f:
             text = f.read()
@@ -120,4 +120,6 @@ def main():
 
 main()
 
-''' Some shift combination create overlapping mappings, so decryption may not recover the original text.'''
+'''
+*** Some shift combination create overlapping mappings, so decryption may not recover the original text.***
+ '''
