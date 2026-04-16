@@ -1,3 +1,12 @@
+'''
+--------------------------
+Group Name:DAN/EXT 14
+1st Member:Rejan Sapkota(Student ID: s400142)
+2nd Member:Saroj Dhakal(Student ID: s399846)
+3rd Member:Raman Lamichhane(Student ID: s401547)
+4th Member:Suraj Kandel(Student ID: s395871 )
+--------------------------
+'''
 # Assignment 2 - Question 1
 
 # shift character
